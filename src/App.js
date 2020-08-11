@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
+import Navbar from './components/layout/Navbar';
+import './App.css';
+import UserItem from './components/users/UserItem';
+import Users from './components/users/Users';
 
 class App extends Component {
   render() {
-    const name = "John Doe";
     return (
       <div className="App">
-      <h1>Hello {name.toUpperCase()}</h1>
-      <h1>Goodbye!</h1>
+        <Navbar />
+        <div className="cotainer">
+
+        <Users />
+        </div>
       </div>
     );
-    
+
   }
 }
 
