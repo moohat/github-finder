@@ -6,16 +6,16 @@ class Users extends Component {
     state = {
         users:[
             {
-                id: 1,
-                login: "mojombo",
-                avatar_url: "https://avatars0.githubusercontent.com/u/1?v=4",
-                html_url: "https://github.com/mojombo",
+                id: 7399302,
+                login: "moohat",
+                avatar_url: "https://avatars2.githubusercontent.com/u/7399302?v=4",
+                html_url: "https://github.com/moohat",
             },
             {
-                id: 2,
-                login: "defunkt",
-                avatar_url: "https://avatars0.githubusercontent.com/u/2?v=4",
-                html_url: "https://github.com/defunkt",
+                id: 55258089,
+                login: "rizalnj",
+                avatar_url: "https://avatars1.githubusercontent.com/u/55258089?v=4",
+                html_url: "https://github.com/rizalnj",
             },
             {
                 id: 3,
@@ -32,7 +32,6 @@ class Users extends Component {
         return (
             <div style={userStyle}>
                 {this.state.users.map(user => (
-                    // <div key={user.id}>{user.login}</div>
                     <UserItem key={user.id} user={user} />
                 ))
                 
